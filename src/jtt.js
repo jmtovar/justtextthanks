@@ -1,1 +1,4 @@
 
+$(function() {
+    window.alert("Ready!!");
+});
