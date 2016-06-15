@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "JustTextThanks",
+  "version": "0.0.1",
+ 
+  "description": "Gets just the text in a new tab.",
+
+  "applications": {
+    "gecko": {
+      "id": "justtextthanks@mozilla.org",
+      "strict_min_version": "45.0"
+    }
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://**/*"],
+      "js": ["src/jtt.js"]
+    }
+  ]
+
+}
